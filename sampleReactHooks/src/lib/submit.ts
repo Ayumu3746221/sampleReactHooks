@@ -18,6 +18,7 @@ export async function submitForm(
   prevState?: prevState | null,
   queryData?: QueryData
 ): Promise<response> {
+  console.log("submitForm", prevState);
   await new Promise((resolve) => setTimeout(resolve, 1000));
 
   const userName = queryData?.get("userName");
