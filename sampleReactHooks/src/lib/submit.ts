@@ -25,14 +25,18 @@ export async function submitForm(
   const comment = queryData?.get("comment");
 
   if (!userName || !age || !comment) {
-    return (prevState = {
+    prevState = {
       state: false,
       message: "Please fill in all fields.",
-    });
+    };
+
+    return prevState;
   }
 
-  return (prevState = {
+  prevState = {
     state: true,
     message: "Form submitted successfully.",
-  });
+  };
+
+  return prevState;
 }
