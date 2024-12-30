@@ -11,6 +11,7 @@ function App() {
   return (
     <>
       <Header />
+      <h2 className="p-4 text-2xl font-bold border">useActionState</h2>
       <UseActionStatePage {...formData} />
     </>
   );

@@ -1,4 +1,4 @@
-import { Home } from "lucide-react";
+import { Home, Github } from "lucide-react";
 import * as DropdownMenu from "@radix-ui/react-dropdown-menu";
 import "./Header.css";
 
@@ -10,6 +10,9 @@ export function Header() {
         <div className="nav">
           <a href="/" className="home-link">
             <Home className="home-icon" />
+          </a>
+          <a href="https://github.com/Ayumu3746221/sampleReactHooks">
+            <Github className="github-icon" />
           </a>
           <DropdownMenu.Root>
             <DropdownMenu.Trigger asChild>
