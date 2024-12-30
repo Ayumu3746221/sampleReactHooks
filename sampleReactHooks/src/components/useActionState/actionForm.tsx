@@ -25,6 +25,7 @@ const ActionForm = ({
   return (
     <form
       action={formAction}
+      name="formData"
       className="max-w-lg mx-auto p-4 my-4 bg-white shadow-lg rounded-lg"
       id="useActionState"
     >
